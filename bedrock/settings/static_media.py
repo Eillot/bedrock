@@ -218,6 +218,12 @@ PIPELINE_CSS = {
         ),
         'output_filename': 'css/contact-spaces-oldie-bundle.css',
     },
+    'developer-hub': {
+        'source_filenames': (
+            'css/mozorg/developer/index.scss',
+        ),
+        'output_filename': 'css/mozorg/developer-hub-bundle.css',
+    },
     'dnt': {
         'source_filenames': (
             'css/firefox/family-nav.less',

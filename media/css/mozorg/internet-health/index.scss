@@ -13,6 +13,8 @@
 @import '../../hubs/card-image-large';
 @import '../../hubs/common';
 @import '../../hubs/news-feed';
+@import 'hub/hero';
+@import 'hub/podcast';
 @import 'hub/newsletter';
 
 main {
@@ -101,20 +103,33 @@ html[dir="rtl"] {
     }
 }
 
-// Issues block does not been a divider right after the header.
+
+// Issues and campaign articles sections do not need horizontal dividers.
+.campaign-articles .content:before,
 .issues .content:before {
     content: none;
 }
 
+.download-firefox {
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    @media #{$mq-tablet} {
+        h2 {
+            margin: 0 40px 20px;
+        }
+
+        .download-button {
+            margin: 0 40px;
+        }
+    }
+
+}
+
 /* -------------------------------------------------------------------------- */
 // Large image cards
-
-.net-neutrality {
-    .card-content-wrapper {
-        background-image: url('/media/img/mozorg/internet-health/hub/net-neutrality.png');
-        @include background-size(100%, auto);
-    }
-}
 
 .report {
     .card-content-wrapper {

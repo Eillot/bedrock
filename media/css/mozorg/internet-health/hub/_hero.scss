@@ -1,0 +1,21 @@
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+@import '../../../pebbles/includes/lib';
+
+/* -------------------------------------------------------------------------- */
+// Internet Health hub hero campaign image
+
+.hero-image {
+
+    // Remove horizontal divider since the component has a colored background.
+    .content:before {
+        content: none;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+}

@@ -9,13 +9,19 @@
 
 .podcast {
     .card-content-wrapper {
-        background-image: url('/media/img/mozorg/internet-health/hub/podcast.png');
+        background-image: url('/media/img/mozorg/internet-health/hub/podcast.jpg');
         @include background-size(100%, auto);
     }
 
     @media #{$mq-tablet} {
         .card-content-wrapper {
-            @include at2x('/media/img/mozorg/internet-health/hub/podcast.png', 100%, auto);
+            @include at2x('/media/img/mozorg/internet-health/hub/podcast.jpg', 100%, auto);
+        }
+    }
+
+    @media #{$mq-desktop-wide} {
+        .card-content-wrapper {
+            padding-top: 160px;
         }
     }
 }
